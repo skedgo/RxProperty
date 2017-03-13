@@ -23,7 +23,6 @@ repositories {
 android {
   compileSdkVersion 25
   buildToolsVersion '25.0.2'
-  dataBinding { enabled = true }
 
   defaultConfig {
     minSdkVersion 15
@@ -37,4 +36,6 @@ dependencies {
   testCompile 'junit:junit:4.12'
   provided 'io.reactivex:rxjava:1.2.4'
   provided "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+  provided 'com.android.databinding:library:1.2.1'
+  provided "com.android.databinding:baseLibrary:$androidPluginVersion"
 }
