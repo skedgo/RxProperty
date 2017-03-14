@@ -36,3 +36,5 @@ That is achieved because when we subscribe to an `Observable` created by `asObse
 ```kotlin
 val onFullNameChanged = fullName.asObservable().skip(1)
 ```
+
+As of now, the library only supports [`ObservableBoolean`](https://developer.android.com/reference/android/databinding/ObservableBoolean.html), [`ObservableField`](https://developer.android.com/reference/android/databinding/ObservableField.html), and [`ObservableList`](https://developer.android.com/reference/android/databinding/ObservableList.html) due to our current need. In the future, we may add more `asObservable()` functions for other kinds. That said, we welcome any external contribution. Pull requests are very highly appreciated.
