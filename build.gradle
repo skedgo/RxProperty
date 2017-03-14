@@ -36,6 +36,8 @@ android {
 
   compileOptions {
     kotlinOptions {
+      // To avoid an issue like the one fixed by
+      // https://github.com/JakeWharton/RxBinding/pull/354.
       freeCompilerArgs = ["-module-name", "RxProperty"]
     }
   }
