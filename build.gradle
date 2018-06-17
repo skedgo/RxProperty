@@ -3,6 +3,7 @@ buildscript {
   ext.kotlinVersion = "1.2.41"
 
   repositories {
+    google()
     jcenter()
     mavenCentral()
   }
@@ -20,6 +21,7 @@ apply plugin: "kotlin-android"
 apply plugin: "com.github.dcendents.android-maven"
 
 repositories {
+  google()
   jcenter()
 }
 
