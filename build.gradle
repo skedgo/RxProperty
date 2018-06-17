@@ -18,6 +18,7 @@ buildscript {
 
 apply plugin: "com.android.library"
 apply plugin: "kotlin-android"
+apply plugin: 'kotlin-kapt'
 apply plugin: "com.github.dcendents.android-maven"
 
 repositories {
@@ -50,4 +51,5 @@ dependencies {
   testImplementation "junit:junit:4.12"
   implementation "io.reactivex:rxjava:1.2.4"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+  kapt "com.android.databinding:compiler:3.1.3"
 }
