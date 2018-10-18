@@ -1,6 +1,6 @@
 package skedgo.rxproperty
 
-import android.databinding.ObservableBoolean
+import androidx.databinding.ObservableBoolean
 import org.junit.Test
 import rx.observers.TestSubscriber
 
