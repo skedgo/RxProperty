@@ -1,7 +1,7 @@
 package skedgo.rxproperty
 
-import android.databinding.ObservableList
-import android.databinding.ObservableList.OnListChangedCallback
+import androidx.databinding.ObservableList
+import androidx.databinding.ObservableList.OnListChangedCallback
 import rx.Observable
 import rx.subscriptions.Subscriptions
 

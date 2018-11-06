@@ -1,7 +1,7 @@
 package skedgo.rxproperty
 
-import android.databinding.ObservableArrayList
-import android.databinding.ObservableList
+import androidx.databinding.ObservableArrayList
+import androidx.databinding.ObservableList
 import org.junit.Test
 import rx.observers.TestSubscriber
 
