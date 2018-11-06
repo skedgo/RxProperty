@@ -1,6 +1,7 @@
 package skedgo.rxproperty
 
 import androidx.databinding.ObservableField
+import androidx.databinding.Observable.OnPropertyChangedCallback
 import rx.Observable
 import rx.subscriptions.Subscriptions
 
@@ -13,7 +14,7 @@ fun <T> ObservableField<T>.asObservable(): Observable<T> {
   return Observable.create {
     // To emit the current value.
     it.onNext(get())
-    val callback = object : androidx.databinding.Observable.OnPropertyChangedCallback() {
+    val callback = object : OnPropertyChangedCallback() {
       override fun onPropertyChanged(sender: androidx.databinding.Observable?, propertyId: Int) {
         it.onNext(get())
       }
